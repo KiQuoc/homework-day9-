@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #fff;
+  padding: 2rem;
+  color: #111;
+  font-size: 1.6rem;
+}
+section{
+    margin: 0 auto;
+    max-width: 120rem;
+    padding: 0 2rem;
+}
+
+/* .logo{
+    border-left: 1.5rem red solid;
+    border-radius: 0.2rem;
+} */
+.logo a{
+    display: block;
+    padding: 1rem 1rem;
+    text-decoration: none; 
+    border-left: 1.5rem red solid;
+    border-radius: 0.2rem;
+    font-size: 1.6rem;
+    color: red;
+}
+
+.flash-sales{
+    margin: 3rem 2rem 0 2rem;
+}
+
+.flash-sales-header{
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+}
+
+.flash-sales-header h1{
+    font-size: 4rem;
+    font-weight: bold;
+    margin-right: 3rem;
+}
+
+.count-down{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.count-down div{
+    text-align: center;
+    position: relative;
+}
+
+.count-down .label{
+    display: block;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.count-down .number{
+    display: block;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.count-down div:not(:last-child)::after{
+    content: ":";
+    position: absolute;
+    color: red;
+    font-weight: 700;
+    top: 55%;
+    transform: translateY(-50%);
+    right: -1.8rem;
+    font-size: 3rem;
+}
+
+.icon{
+    display: flex;
+    margin-left: auto;
+    gap: 1rem;
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+.icon i:hover{
+    color: red;
+}
+
+.Product-all{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap:1rem;
+    margin-top: 5rem;
+    margin-bottom: 2rem
+}
+
+.Product{
+    flex: 1 1 calc(25% -2rem);
+    position: relative;
+    /* padding: 4rem; */
+    border: 0.3rem rgb(100, 92, 92);
+    min-width: 22rem;
+    padding: 1rem;
+}
+
+.Product-card:hover{
+    box-shadow: 0 4px 12px rgba(121, 13, 13, 0.1);;
+}
+
+.Product-card{
+    position: relative;
+    overflow: hidden;
+}
+.discount{
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    display: block;
+    padding: 0.5rem 0.5rem;
+    background-color: red;
+    border-radius: 0.4rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.Product img{
+    width: 100%;
+    height: 25rem;
+    object-fit: cover;
+    display: block;
+}
+
+.actions{
+    position: absolute;
+    bottom:0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.add-card{
+    width: 100%;
+    padding: 1rem;
+    font-size: 2rem;
+    background-color: #111;
+    color: #fff;
+    cursor: pointer;
+}
+.Product:hover .actions{
+    opacity: 1;
+}
+
+.icon-img{
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap:   1rem;
+    font-size: 2rem;
+}
+
+.icon-img i {
+    font-size: 2rem;
+    color: #333;
+    background: #eee6e6;
+    border-radius: 100%;
+    padding: 0.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+i:hover{
+    background: red;
+    color: #fff;
+}
+
+.Product h3 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin: 1.5rem 0 0.8rem;
+}
+.Price {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+.Price .Sales {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: red;
+}
+.Price .Old {
+    font-size: 1.4rem;
+    color: #888;
+    text-decoration: line-through;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: gold;
+    font-size: 1.4rem;
+}
+
+.rating span {
+    color: #555;
+    font-size: 1.2rem;
+}
+
+.view-all{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.view-all button {
+    padding: 1rem 2rem;
+    margin-top: 3rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    border: none;
+    background: red;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    transition: 0.3s ease;
+}
+
+.view-all button:hover {
+    background: #b30000;
+}

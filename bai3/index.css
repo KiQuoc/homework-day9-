@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  background: #fff;
+  color: #1a1a1a;
+}
+
+.Product-section {
+  width: 90%;
+  margin: 4rem auto;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.logo a {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #e63946;
+  text-decoration: none;
+  padding: 0 1rem;
+  border-left: 1rem red solid;
+}
+
+.Product-header h2 {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #111;
+}
+
+.icon-header{
+    display: flex;
+    margin-left: auto;
+    gap: 1rem;
+    font-size: 2.5rem;
+
+}
+
+.icon-header i {
+  font-size: 2rem;
+  margin-left: 1rem;
+  cursor: pointer;
+  color: #333;
+}
+i:hover{
+    color: red;
+}
+
+.Products-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.Products {
+  flex: 1 1 calc(25% - 2rem); 
+  max-width: calc(25% - 2rem);
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 1rem;
+  overflow: hidden;
+  text-align: center;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.Products:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transform: translateY(-5px);
+}
+
+.Products-card {
+  position: relative;
+  padding: 2rem;
+}
+
+.Products-card img {
+  max-width: 100%;
+  height: 200px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+.discount {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background: #00c853;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 0.3rem 0.8rem;
+  border-radius: 0.4rem;
+  font-weight: bold;
+}
+
+.actions {
+  display: none;
+  position: absolute;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+}
+
+.Products:hover .actions {
+  display: block;
+}
+
+.add-cart {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.4rem;
+  border: none;
+  background: #000;
+  color: #fff;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.add-cart:hover {
+  background: #e63946;
+}
+
+.icon-card {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+
+.icon-card i {
+  font-size: 2rem;
+  gap: 2rem;
+  background: #fff;
+  border-radius: 50%;
+  padding: 0.1rem;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.icon-card i:hover {
+  color: #e63946;
+  border-color: #e63946;
+}
+
+.Products h3 {
+  font-size: 1.6rem;
+  margin: 1rem 0 0.5rem;
+  font-weight: 600;
+  color: #222;
+}
+
+.price {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #e63946;
+}
+
+.old-price {
+  font-size: 1.4rem;
+  color: #888;
+  text-decoration: line-through;
+  margin-left: 0.6rem;
+}
+
+.rating {
+  margin-top: 0.8rem;
+  font-size: 1.4rem;
+  color: #f4c150;
+}
+
+.rating span {
+  margin-left: 0.5rem;
+  font-size: 1.3rem;
+  color: #666;
+}
+
+.view {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.view-all {
+  background: #e63946;
+  color: #fff;
+  padding: 1.2rem 2.4rem;
+  border: none;
+  font-size: 1.6rem;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+
+.view-all:hover {
+  background: #000;
+}
